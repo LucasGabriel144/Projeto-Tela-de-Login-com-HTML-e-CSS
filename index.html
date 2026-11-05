@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="styles.css">
     <title>Login</title>
+    <!-- Ícones e Estilos -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
     <main class="container">
-        <form>
+        <form class="login-form">
             <h1>Login</h1>
+
             <div class="input-box">
-                <input placeholder="Usuário" type="email">
+                <input type="email" placeholder="E-mail" required>
             </div>
+
             <div class="input-box">
-                <input placeholder="Senha" type="password">
+                <input type="password" placeholder="Senha" required>
             </div>
 
             <div class="remember-forgot">
                 <label>
-                    <input type="checkbox">
-                    Lembrar senha
+                    <input type="checkbox"> Lembrar de mim
                 </label>
                 <a href="#">Esqueci a senha</a>
             </div>
 
-            <button type="submit" class="Login">Longin</button>
+            <button type="submit" class="btn-submit">Entrar</button>
 
             <div class="register-link">
                 <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
             </div>
         </form>
-
     </main>
 
 </body>
-
 </html>
