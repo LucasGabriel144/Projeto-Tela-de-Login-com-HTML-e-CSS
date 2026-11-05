@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -12,14 +12,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('./img/img.jpg');
+    background: url('./img/img.jpg') no-repeat center center;
     background-size: cover;
 }
 
+/* Caixa principal de login (efeito vidro) */
 .container {
     width: 420px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     color: #fff;
     padding: 30px 40px;
@@ -32,6 +33,7 @@ body {
     text-align: center;
 }
 
+/* Inputs e campos de texto */
 .input-box {
     position: relative;
     width: 100%;
@@ -42,8 +44,8 @@ body {
 .input-box input {
     width: 100%;
     height: 100%;
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
     outline: none;
     font-size: 16px;
@@ -55,7 +57,7 @@ body {
     color: #c5c5c5;
 }
 
-.input-box input i {
+.input-box i {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -63,10 +65,18 @@ body {
     font-size: 20px;
 }
 
+/* Opções de "Lembrar senha" e "Esqueci" */
 .remember-forgot {
     display: flex;
     justify-content: space-between;
-    margin:-15px 0 15px;
+    margin: -15px 0 15px;
+    font-size: 14px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .remember-forgot label input {
@@ -83,27 +93,29 @@ body {
     text-decoration: underline;
 }
 
+/* Botão principal de entrar */
 .Login {
     width: 100%;
     height: 50px;
-    background-color:#fff;
+    background: #fff;
     border: none;
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
     color: #333;
     font-weight: 600;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    transition: 0.3s ease;
 }
 
 .Login:hover {
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     color: #fff;
-    transition: 0.5;
 }
 
+/* Rodapé com link de cadastro */
 .register-link {
     font-size: 14px;
     text-align: center;
